@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { AuthLayout, BaseLayout } from './components'
 
-import { Cart, CartEmptyScreen, ChangePass, CheckMail, Checkout, ConfirmScreen, Home, OrderDetail, OrderList, PageNotFound, ProductDetails, ProductList, ResetPass, SignIn, SignUp, Verification, WishList, WishListEmpty } from './pages'
+import { AccountScreen, AddressScreen, Cart, CartEmptyScreen, ChangePass, CheckMail, Checkout, ConfirmScreen, Home, OrderDetail, OrderList, PageNotFound, ProductDetails, ProductList, ResetPass, SignIn, SignUp, Verification, WishList, WishListEmpty } from './pages'
 import { GlobalStyles } from './styles/global/globalStyles'
 
 function App() {
@@ -23,6 +23,8 @@ function App() {
           <Route path='/wishlist' element={<WishList />}/>
           <Route path='/wishlist_empty' element={<WishListEmpty />}/>
           <Route path='/confirm' element={<ConfirmScreen />}/>
+          <Route path='/account' element={<AccountScreen />}/>
+          <Route path='/account/add' element={<AddressScreen />}/>
         </Route>
 
         {/* auth screen */}
